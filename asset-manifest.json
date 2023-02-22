@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Rep_RN18_veb3_160620/static/css/main.7acaea2f.css",
+    "main.js": "/Rep_RN18_veb3_160620/static/js/main.07d3183d.js",
+    "index.html": "/Rep_RN18_veb3_160620/index.html",
+    "main.7acaea2f.css.map": "/Rep_RN18_veb3_160620/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/Rep_RN18_veb3_160620/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
