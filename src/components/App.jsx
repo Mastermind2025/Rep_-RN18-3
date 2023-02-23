@@ -1,6 +1,9 @@
+import Counter from "./Counter/Counter";
+
 export const App = () => {
   return (
-    <div
+    <>
+    {/* <div
       style={{
         height: '100vh',
         display: 'flex',
@@ -11,6 +14,10 @@ export const App = () => {
       }}
     >
       React homework template
-    </div>
+    </div> */}
+{/* initialvalue это prop - начальное значение */}
+      <Counter initialValue={10} />
+      
+      </>
   );
 };
