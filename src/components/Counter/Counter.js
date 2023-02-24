@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './Counter.css';
+
 import Controls from './Controls';
 import Value from './Value';
+// import Dropdown from 'components/Dropdown/Dropdown';
 
-import './Counter.css';
 //event - это кросс браузерная обёртка SyntheticEvent Object.
 //Доступно только в синхронном коде!
 //из event можем получить .type .target и много другого
@@ -66,6 +68,7 @@ class Counter extends React.Component {
 
     render() {
         return (
+           
             <div className="Counter">
 {/* Это вынесли как отдельный компонетн в Value.js */}
 {/* <span className="Counter__value">{this.state.value}</span> */}
@@ -91,7 +94,12 @@ onDecreament={this.handleDecreament}
                     onDecreament={this.handleDecreament}
                 />
 
+                
+
             </div>
+
+           
+            
         );
     }
 }
