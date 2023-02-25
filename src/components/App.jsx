@@ -60,7 +60,7 @@ class App extends Component {
         <Wrap>
 {/*Общее колво элементов, это длина массива */}
     <span>Общее кол-во: { todos.length }</span>
-    <span>Кол-во выполненных: { completedTodos }</span>
+    <span>&nbsp;Кол-во выполненных: { completedTodos }</span>
 {/*Передаём метод как props в Todolist.js  */}
         </Wrap>  
 {/* В объекте state, поле todos содержит массив  initialTodos,
