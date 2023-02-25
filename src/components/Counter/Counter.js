@@ -49,7 +49,7 @@ class Counter extends React.Component {
     ))        
     }
     
-        handleDecreament = () => {
+    handleDecreament = () => {
         
         this.setState(prevState => ({
             value: prevState.value - 1,
@@ -93,14 +93,8 @@ onDecreament={this.handleDecreament}
                     onIncreament={this.handleIncreament}
                     onDecreament={this.handleDecreament}
                 />
-
-                
-
             </div>
-
-           
-            
-        );
+       );
     }
 }
 

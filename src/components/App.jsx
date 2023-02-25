@@ -16,7 +16,7 @@ const colorPickerOptions = [
   { label: 'pink', color: '#E91E63' },
   { label: 'indigo', color: '#3F51B5' },
 ];
-
+// Это стили для 'Общее кол-во: 5Кол-во выполненных: 3'
 const Wrap = styled.h3`
  color: red;
  border: 2px dashed gold;
@@ -24,14 +24,11 @@ const Wrap = styled.h3`
  padding: 5px;
 `;
 
-
-
-
 class App extends Component {
   state = {
     todos: initialTodos,
   };
-  
+ 
 // id todoId который мы хотим удалить
   deleteTodo = todoId => {
     //берем предыдущее состояния и из него делаем следующее состояние    
@@ -49,32 +46,28 @@ class App extends Component {
       0,
     );
 
-
     return (
       <>
     
 {/* initialvalue это prop - начальное значение */}
-      <Counter initialValue={10} />
+      
+        <Counter initialValue={10} />
 
-      <Dropdown />
+        <Dropdown />
 
         <ColorPicker options={colorPickerOptions} />
         
         <Wrap>
 {/*Общее колво элементов, это длина массива */}
-        <span>Общее кол-во: { todos.length }</span>
-        <span>Кол-во выполненных: { completedTodos }</span>
+    <span>Общее кол-во: { todos.length }</span>
+    <span>Кол-во выполненных: { completedTodos }</span>
 {/*Передаём метод как props в Todolist.js  */}
         </Wrap>  
-
-      <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
+{/* В объекте state, поле todos содержит массив  initialTodos,
+     который приходит из todos.json */}
+        <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
       
-      <div>
-
-
-      </div>
-      
-      </>
+     </>
   );
 };
 }
