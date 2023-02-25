@@ -40,9 +40,9 @@ class Dropdown extends Component {
 { visible ? 'To Hide' : 'To Show' }
 </button>
 
-             {/* <button type="button" className="Dropdown__toggle" onClick={this.hide}>
-                To Hide This
-            </button> */}
+{/* <button type="button" className="Dropdown__toggle" onClick={this.hide}>
+To Hide This
+</button> */}
 
 
 {/* если visible  true, то рендерится меню*/}
